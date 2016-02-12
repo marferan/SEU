@@ -12,8 +12,138 @@
     tools:context="com.muiinf.marferan.myaiot.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <!-- tres bloques -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/rellenodi"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/rellenodi">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/Nombre_Servidor" android:id="@+id/textView" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="     " android:id="@+id/textView2" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="XXXX1111"  android:id="@+id/tvNombreServidor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/rellenodi">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/Nombre_Variable" android:id="@+id/textView4" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="     " android:id="@+id/textView5" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="XXXX1111"  android:id="@+id/tvNombreVariable" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/rellenodi">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/Nombre_Dispositivo" android:id="@+id/textView7" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="     " android:id="@+id/textView8" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="XXXX1111"  android:id="@+id/tvNombreDispositivo" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/rellenodi"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="175dp">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:id="@+id/Grafica">
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/rellenodi"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/rellenodi">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="LED1"
+                    android:id="@+id/buttonled1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="LED2"
+                    android:id="@+id/buttonled2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="LED3"
+                    android:id="@+id/buttonled3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="LED4"
+                    android:id="@+id/buttonled4" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/rellenodi"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/scrollView" >
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="" android:id="@+id/tvEstado" />
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>
